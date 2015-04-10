@@ -1,0 +1,28 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+            Archive Name: os2undoc.zip
+       Short Description: Undocumented Features of OS/2 - 31 May 1999
+        Long Description: This INF file collects a variety of information
+                          concerning undocumented APIs and features of OS/2.
+                          Document and sample source included.
+      Proposed directory
+           for placement: /pub/os2/info
+
+               Your name: Rick Papo
+           Email address: rpapo@msen.com
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: (none)
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: OS/2, any version.
+ Additional requirements:
+
+                Replaces: (none)
+
+
+

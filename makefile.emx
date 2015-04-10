@@ -1,0 +1,45 @@
+# Makefile for sample programs
+CC=gcc
+DEBUG = -g
+DEFINES = 
+CFLAGS  = $(DEBUG) -Zmt $(DEFINES)
+LDFLAGS = $(DEBUG) -Zmtd
+LIBS    = -lstdcpp
+
+CP= cp
+RM = @rm -f
+
+.SUFFIXES: .c .cc .cxx .C .o. .obj .exe
+
+default: dosq.exe lsof.exe
+
+dosq.exe: dosq.o
+lsof.exe: lsof.o
+
+dosq.o: dosq.c dosqss.h
+
+lsof.o: lsof.c dosqss.h
+
+#
+# generic part
+#
+
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $@
+
+
+.c.obj:
+	$(CC) $(CFLAGS) -Zomf -c $< -o $@
+
+%.exe: %.o
+	$(CC) $(LDFLAGS) -o $@ $^
+
+%.exe: %.obj
+	$(CC) $(LDFLAGS) -Zomf -o $@ $^
+
+clean:
+	$(RM) *.o *.obj
+	$(RM) core
+
+veryclean: clean
+	$(RM) *.exe

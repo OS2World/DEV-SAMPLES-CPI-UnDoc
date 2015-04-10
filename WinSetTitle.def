@@ -1,0 +1,7 @@
+NAME WinSetTitle WINDOWCOMPAT
+DESCRIPTION "Sample program to illustrate WinSetTitle"
+PROTMODE
+EXETYPE OS2
+IMPORTS
+   WINSETTITLE = PMSHAPI.93
+

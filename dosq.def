@@ -1,0 +1,7 @@
+NAME DOSQ WINDOWCOMPAT
+DESCRIPTION "Sample program DOSQ to illustrate DosQuerySysState"
+PROTMODE
+EXETYPE OS2
+IMPORTS
+   DosQuerySysState = DOSCALLS.368
+

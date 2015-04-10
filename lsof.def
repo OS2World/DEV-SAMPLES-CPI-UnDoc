@@ -1,0 +1,7 @@
+NAME LSOF WINDOWCOMPAT
+DESCRIPTION "Sample program LSOF to illustrate DosQuerySysState"
+PROTMODE
+EXETYPE OS2
+IMPORTS
+   DosQuerySysState = DOSCALLS.368
+
